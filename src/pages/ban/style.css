@@ -89,12 +89,6 @@ article {
 .ban-back-button i:hover {
   color: white !important;
 }
-.temp-ban {
-  border-bottom: 1px dotted;
-}
-.perm-ban {
-  border-bottom: 1px solid;
-}
 
 .banned {
   color: #f20521;
@@ -102,5 +96,4 @@ article {
 
 .unban strong {
   color: #62ff00;
-  border-bottom: 1px dashed;
 }

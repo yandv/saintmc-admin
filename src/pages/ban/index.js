@@ -298,7 +298,7 @@ export default class Ban extends Component {
                       </ul>
                       <hr />
                       {ban.unbanned ? (
-                        <p className="text-center unban">
+                        <p style={{marginBottom: "0"}} className="text-center unban">
                           <strong>
                             {ban.unbanReason === "APPEAL"
                               ? "Banimento revogado!"
@@ -306,13 +306,13 @@ export default class Ban extends Component {
                           </strong>
                         </p>
                       ) : ban.banExpire === -1 ? (
-                        <p className="text-center">
+                        <p style={{marginBottom: "0"}} className="text-center">
                           <strong className="perm-ban banned">
                             Conta banida permanentemente do servidor
                           </strong>
                         </p>
                       ) : (
-                        <p className="text-center">
+                        <p style={{marginBottom: "0"}} className="text-center">
                           <strong className="temp-ban banned">
                             Conta banida temporariamente
                             <br />
