@@ -1,0 +1,258 @@
+* {
+  outline: none!important;
+}
+body {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f2f2f2;
+}
+
+nav.nav-top-one {
+  background-color: #e24e03;
+  border-bottom: 2px solid #e69100;
+  color: white;
+}
+
+nav.nav-top-two {
+  background-color: #ed9f17;
+  border-bottom: 3px solid #fc7932;
+  padding: 0 !important;
+}
+
+#navigation a {
+  color: #fff;
+  background-color: #ed9f17;
+  padding: 15px;
+  font-size: 15px;
+  transition: 0.5s !important;
+}
+li.nav-item a:hover {
+  text-decoration: none!important;
+}
+li.nav-item {
+  text-align: center;
+}
+footer {
+  background-color: #1f1f1f;
+  border-top: 2px solid #ccc;
+  width: 100%;
+  margin: 20px 0 0 0;
+  padding: 15px 0;
+  border-bottom: 4px solid #1a1a1a;
+}
+.broadcast {
+  background-color: #d8d9da;
+  border-bottom: 2px solid #a2a7ac;
+}
+
+.typed-div {
+  padding: 20px;
+}
+@media (pointer: coarse) {
+  div.input-group {
+    width: 100% !important;
+  }
+  form#player-search {
+    padding: 15px !important;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .course-visibility {
+    visibility: hidden;
+    width: 0 !important;
+  }
+  div.footer-copy {
+    max-width: 100% !important;
+    text-align: center;
+  }
+  div.site-pad img {
+    visibility: hidden;
+  }
+  a.navbar-brand {
+    margin-left: 10px;
+  }
+  .staff-membro {
+    margin-bottom: 1em;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  div.icons {
+    padding: 1em 0 0 0 !important;
+  }
+}
+.page-start {
+  margin-top: 50px;
+}
+.news-card .news-card-header {
+  color: #fff;
+  background-color: #ed9f16;
+  padding: 0.5em 1em;
+  border-bottom: 3px solid #fc7832;
+}
+.news-card .news-card-body {
+  padding: 1.25rem;
+}
+.sidebar-group .sidebar-card .sidebar-card-header {
+  background-color: #ed9f16;
+  color: #fff;
+  padding: 0.5em 1em;
+  text-align: center;
+  border-bottom: 3px solid #fc7832;
+}
+.sidebar-group .sidebar-card .sidebar-card-title {
+  margin: 0;
+}
+.h3,
+h3 {
+  font-size: 1.3rem;
+}
+.logo-img {
+  -webkit-transform: rotate(0) scale(1);
+  transform: rotate(0) scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.logo-img:hover {
+  -webkit-transform: rotate(-10deg) scale(1.2);
+  transform: rotate(-10deg) scale(1.2);
+}
+.nav-icon-hover:hover {
+  text-shadow: 2px 2px 4px #000000;
+}
+.side-pad {
+  padding: 1.2em;
+}
+.ip-link {
+  border: none;
+  font-weight: 700;
+  background: 0 0;
+  padding: 0;
+  border-bottom: 1px dashed #999;
+  font-size: 20px;
+  outline: none;
+}
+.ip-link:active {
+  outline: none;
+  border: none;
+}
+ul {
+  list-style-type: none;
+}
+.footer-links {
+  color: white;
+  padding: 1em;
+}
+.footer-links li {
+  padding: 0.1em;
+  color: inherit;
+  text-decoration: none;
+}
+.footer-links li a {
+  color: inherit;
+  text-decoration: none;
+}
+.footer-links li a:hover {
+  color: #b3b3b3;
+  text-decoration: none;
+}
+.footer-copy {
+  color: white;
+}
+.equipe-titles {
+  color: white;
+  padding: 0.7em 1em;
+  font-size: 18px;
+  font-weight: 300;
+}
+.equipe-titulo {
+  color: white;
+  padding: 0.3em 0.7em;
+  background-color: #ed9f16;
+  margin: 0;
+  border-radius: 15px 15px 15px 0;
+  border-bottom: 5px solid #e24e02;
+}
+.staff-membro {
+  text-align: center;
+}
+.staff-membro a:hover {
+  text-decoration: none;
+}
+.staff-membro-photo {
+  box-shadow: 0px 0px 24px 0 rgba(0, 0, 0, 0.4);
+}
+.staff-member-element {
+  margin-bottom: 5px;
+  text-transform: none;
+}
+::-webkit-scrollbar-track {
+  background-color: #f4f4f4;
+}
+::-webkit-scrollbar {
+  width: 12px;
+  background: #e24e03;
+}
+::-webkit-scrollbar-thumb {
+  background: #e24e03;
+}
+a {
+  text-decoration: none;
+  color: #ed9f16;
+}
+a:hover {
+  color: #bf7e0d;
+}
+.nickname-title {
+  background-color: #ed9f16;
+  color: white;
+  border-bottom: 3px solid #e24e02;
+  padding: 5px;
+  margin-bottom: 0;
+}
+.stats-title {
+  background-color: #ed9f16;
+  color: white;
+  border-bottom: 3px solid #e24e02;
+  padding: 5px;
+  margin-bottom: 0;
+}
+.stats-mode-title {
+  margin: 1em 0;
+}
+.stats-mode-subtitle {
+  text-align: center;
+  margin-bottom: 0 !important;
+}
+.punish-title {
+  background-color: #ed9f16;
+  color: white;
+  border-bottom: 3px solid #e24e02;
+  padding: 5px;
+}
+.table .thead-dark th {
+  background-color: #ed9f16 !important;
+  border: 0;
+}
+@media (max-width: 767px) {
+  .box-title-profile {
+    margin-top: 30px;
+  }
+}
+.punishments-number {
+  font-family: "Roboto", sans-serif;
+}
+.medal-img {
+  padding: 0 0.5em;
+}
+
+.profile-link {
+  color: unset;
+}
+.profile-link:hover {
+  color: unset;
+}
+.card-img,
+.card-img-top {
+  box-shadow: 0px 0px 24px 0 rgba(0, 0, 0, 0.4);
+}

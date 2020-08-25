@@ -1,0 +1,17 @@
+header#main-header {
+    width: 100%;
+    height: 40px;
+    background: #da552f;
+    font-weight: bold;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logged-in-avatar {
+    border-radius: 50%;
+}
+.logged-in-username {
+    color: white;
+    text-transform: none!important;
+}
