@@ -1,0 +1,11 @@
+.bg-nav-loja {
+    height: 332px;
+    background: url('https://saintmc.net/img/banner.png') no-repeat center;
+    background-size: 100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    filter: grayscale(0)!important;
+    text-align: center;
+}
