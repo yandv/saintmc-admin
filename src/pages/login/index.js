@@ -1,9 +1,7 @@
 import React, { Component } from "react";
-
 import { Link, Redirect } from "react-router-dom";
-import api from "../../components/admin/api";
 
-import { login, isLogged } from '../../components/auth/api'
+import { login, isLogged } from '../../components/auth/api';
 
 import "./style.css";
 
@@ -26,10 +24,10 @@ export default class Login extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  async handleSubmit(event) {
-    event.preventDefault();
+  async handleSubmit(e) {
+    e.preventDefault();
 
-    login("yandv", "pinto")
+    login(this.state.username, this.state.password);
     this.setState({ loggedIn: true });
 
     return true;

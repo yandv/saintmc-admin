@@ -24,8 +24,8 @@ export default class Footer extends Component {
                     href="https://discord.saintmc.net"
                   >
                     Discord
-                  </a>{" "}
-                  |{" "}
+                  </a>
+                  {" "}|{" "}
                   <a
                     target="_blank"
                     rel="noopener noreferer"
@@ -35,7 +35,7 @@ export default class Footer extends Component {
                   </a>
                 </p>
                 <p style={{ fontSize: "13px" }}>
-                  Desenvolvido por{" "}
+                  {"Desenvolvido por "}
                   <a href="https://twitter.com/allanmarcelino_" target="_blank">
                     yandv
                   </a>

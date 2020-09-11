@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "./style.css";
 
 import { isLogged, logOut, getProfile } from "../../components/auth/api";
+
+import "./style.css";
 
 export default class Header extends Component {
   constructor(props) {
@@ -10,13 +11,13 @@ export default class Header extends Component {
 
     this.state = {
       logged: false,
+      username: getProfile()
     };
   }
 
   render() {
     return (
       <>
-        <nav className="navbar nav-top-one navbar-fixed-top"></nav>
         <nav className="navbar navbar-expand-lg nav-top-two navbar-fixed-top">
           <div className="container">
             <a className="navbar-brand" href="/">
@@ -86,10 +87,7 @@ export default class Header extends Component {
                 </li>
 
                 {isLogged() ? (
-                  <>
-                    <li
-                      className="nav-item dropdown my-auto"
-                    >
+                  <li className="nav-item dropdown my-auto">
                     <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <img
                         className="logged-in-avatar"
@@ -101,15 +99,12 @@ export default class Header extends Component {
                     </a>
                     <div class="dropdown-menu" style={{backgroundColor: "#ed9f17"}} aria-labelledby="menuDropdown">
                       <Link to="/dashboard" class="dropdown-item" href="#">Dashboard</Link>
-                      <Link to="/profile" class="dropdown-item" href="#">Perfil de Avontz</Link>
+                      <Link to="/profile" class="dropdown-item" href="#">Perfil de { this.state.username }</Link>
                       <Link to="/" class="dropdown-item" href="#" onClick={() => {logOut()}}>Sair</Link>
                     </div>
-                    </li>
-                    {/*<li className="nav-item my-auto" style={{marginLeft: "10px"}}>
-                      <span className="logged-in-username">Avontz</span>
-                    </li>*/}
-                  </>
+                  </li>
                 ) : (
+
                   <li
                     className="nav-item my-auto"
                     style={{ marginLeft: "15px" }}
@@ -125,9 +120,9 @@ export default class Header extends Component {
                       <span className="label label-nav label-custom-icon">
                         <i className="fa fa-sign-in"></i>
                       </span>
-                      {" 2"}
                     </Link>
                   </li>
+
                 )}
               </ul>
             </div>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import api from "../../components/admin/api";
+import api from "../../services/api";
 
 import "../../styles/stylesheet.css";
 import Header from "../../components/header/index";

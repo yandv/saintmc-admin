@@ -6,7 +6,7 @@ import Banner from "../../components/banner";
 import Footer from "../../components/footer";
 
 import "./style.css";
-import api from "../../components/admin/api";
+import api from "../../services/api";
 
 export default class MainPage extends Component {
   constructor(props) {

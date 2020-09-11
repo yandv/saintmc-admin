@@ -1,17 +1,23 @@
 export function login(username, password) {
   let user = {
-    username: "yandv",
+    username,
+    password
   };
 
-  localStorage.setItem("userData", JSON.stringify(user));
-  console.log("success");
+  if (true) { 
+    localStorage.setItem("userData", JSON.stringify(user.username));
+    console.log({ info: 'login sucess' });
+  } else {
+    console.log({ info: 'login failed' });
+  }
 
   return user;
 }
 
 export function register(username, password) {
   let user = {
-    username: "yandv",
+    username,
+    password
   };
 
   return user;
@@ -28,13 +34,10 @@ export function logOut() {
 
 export function getProfile() {
   if (isLogged()) {
-    let userData = localStorage.getItem("userData");
-    let { data } = userData;
-
-    return data;
+    return localStorage.getItem("userData");
   }
 
-  return {};
+  return false;
 }
 
 export function isLogged() {

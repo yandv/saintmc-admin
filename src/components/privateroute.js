@@ -3,8 +3,8 @@ import { Route, Redirect } from "react-router-dom";
 import { useAuth } from "./auth/index";
 
 function PrivateRoute({ component: Component, ...rest }) {
-
   return (
+
     <Route
       {...rest}
       render={(props) => {
@@ -17,6 +17,7 @@ function PrivateRoute({ component: Component, ...rest }) {
         );
       }}
     />
+
   );
 }
 

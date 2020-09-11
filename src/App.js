@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./style.css";
 
 import { AuthContext } from "./components/auth/index";
@@ -11,11 +11,10 @@ import Login from "./pages/login/index";
 import Ban from "./pages/ban/index";
 import PlayerInfo from "./pages/player/index";
 
-import api from "./components/admin/api";
 import PrivateRoute from "./components/privateroute";
 
 function App() {
-  const [teste, setTeste] = useState(false);
+  // const [teste, setTeste] = useState(false);
 
   return (
     <AuthContext.Provider>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import api from "../../components/admin/api";
+import api from "../../services/api";
 
 import "../../styles/stylesheet.css";
 import Header from "../../components/header/index";
@@ -65,7 +65,7 @@ export default class Ban extends Component {
 
     this.searchTimeout = 0;
 
-    localStorage.setItem("eae", "joao");
+    //ocalStorage.setItem("eae", "joao");
   }
 
   componentDidMount() {
