@@ -22,7 +22,7 @@ export default class Header extends Component {
           <div className="container">
             <a className="navbar-brand" href="/">
               <img
-                src="https://saintmc.net/img/logo.png"
+                src="logo.png"
                 style={{ maxHeight: "65px" }}
               />
             </a>
